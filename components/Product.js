@@ -24,10 +24,10 @@ function Product(props) {
       unit_amount:price,
       quantity:quantity
     });
-    const {trial}= await axios.post('https://notificationss-dn4dt659t-nadinenashaat.vercel.app/api/order',{
-     to:"ammaryasseraaziz@gmail.com"
-    })
-    console.log(trial.to)
+    // const {trial}= await axios.post('https://notificationss-dn4dt659t-nadinenashaat.vercel.app/api/order',{
+    //  to:"ammaryasseraaziz@gmail.com"
+    // })
+    // console.log(trial.to)
     if (data) {
       console.log(location.href)
       location.href=data.url
