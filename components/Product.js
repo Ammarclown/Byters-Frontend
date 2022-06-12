@@ -19,10 +19,15 @@ function Product(props) {
     //   orderNo:id,
     
     // });
+    // const {s}=await axios.default.post('https://byters-shipping-microservice.vercel.app/shipments',{
+    //   orderNo:id
+    // })
+    // console.log(s.status)
+
     const { data } = await axios.post('https://byters-payment-ammarclown.vercel.app/payment', {
       name:productName,
       unit_amount:price,
-      quantity:quantity
+      quantity:1
     });
     // const {trial}= await axios.post('https://notificationss-dn4dt659t-nadinenashaat.vercel.app/api/order',{
     //  to:"ammaryasseraaziz@gmail.com"
