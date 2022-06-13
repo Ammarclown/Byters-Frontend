@@ -43,9 +43,12 @@ function Product(props) {
   prodName:productName,
     })
     if(o){
-      setMessage(`Success! Your order is created, click this link to proceed to checkout: ${o.orderID}`);
+      setMessage(`Success! Your order is created: ${o.orderID}`);
       var on=o.orderID
-
+      const {n}=await axios.post("http://notificationss-6v6x6kl0o-nadinenashaat.vercel.app/api/order")
+      if(n){
+        console.log("success")
+      }
     }
     //shipmentmicroservice
     const {s}=await axios.default.post('https://byters-shipping-microservice.vercel.app/shipments',{
