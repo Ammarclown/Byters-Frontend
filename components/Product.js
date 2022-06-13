@@ -23,7 +23,7 @@ function Product(props) {
 
     const { data } = await axios.post('https://byters-payment-ammarclown.vercel.app/payment', {
       name:productName,
-      unit_amount:price,
+      unit_amount:price*5,
       quantity:1
     });
    // const {data}=await axios.default.post("https://notificationss-dn4dt659t-nadinenashaat.vercel.app/api/order")
