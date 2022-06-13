@@ -20,7 +20,7 @@ function ProductCard({
         <h3 className="ml-2 text-lg font-bold uppercase">{productName}</h3>
         <div className="flex flex-col">
           <span className="ml-2 text-lg leading-7">
-            ${price}
+            {price}$
           </span>
         </div>
       </div>

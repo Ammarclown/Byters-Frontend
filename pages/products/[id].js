@@ -10,7 +10,7 @@ function ProductPageContainer({ product }) {
 
   return (
     <Product
-      id={String(product.id)}
+      id={product.id}
       productName = {String(product.productName)}
       description={String(product.description)}
       quantity={product.quantitiy}

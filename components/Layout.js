@@ -123,7 +123,7 @@ function Layout({ children }) {
             </button>
                  </Link>
             </div>
-
+            
             <div className="flex flex-col sm:flex-row">
               <Link href="/shipments/shipment">
               <button type="button" class="btn btn-success">
